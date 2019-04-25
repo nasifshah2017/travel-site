@@ -1,0 +1,12 @@
+@import "normalize.css";
+@import "base/_variables";						/* importing the variables file that we palced in the base folder */
+@import "base/_mixins";							/* importing _mixin.css file that we placed in app-asset-styles-base folder */
+@import "base/_global";
+@import "modules/_large-hero"; 					/* importing the code from the _large-hero file to this file */
+@import "modules/_btn";							/* importing the button file that we palced in the modules folder */
+@import "modules/_wrapper";						/* importing the _wrapper.css that we placed in the modules' folder */
+@import "modules/_page-section";				/* importing the _page-section.css that we placed in the modules' folder */
+@import "modules/_headline";					/* importing the _headline.css that we placed in the modules' folder */
+@import "modules/_row";							/* importing the _row.css that we placed in the modules' folder */	
+@import "modules/_generic-content-container";	/* importing the _generic-content-container that we placed in the modules' folder */			
+
