@@ -1,16 +1,16 @@
-@define-mixin atSmall {
+@define-mixin atSmall {			/* Mobiles */
 	@media (min-width: 530px) {
 		@mixin-content;
 	}
 }
 
-@define-mixin atMedium {
+@define-mixin atMedium {		/* Tablets */
 	@media (min-width: 800px) {
 		@mixin-content;
 	}
 }
 
-@define-mixin atLarge {
+@define-mixin atLarge {			/* Desktops */
 	@media (min-width: 1200px) {
 		@mixin-content;
 	}
