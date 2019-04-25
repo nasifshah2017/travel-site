@@ -10,5 +10,6 @@
 @import "modules/_row";							/* importing the _row.css that we placed in the modules' folder */	
 @import "modules/_generic-content-container";	/* importing the _generic-content-container that we placed in the modules' folder */
 @import "modules/_section-title";				/* importing the _section-title that we placed in the modules' folder */	
-@import "modules/_feature-item";				/* importing the _feature-item that we placed in the modules' folder */		
+@import "modules/_feature-item";				/* importing the _feature-item that we placed in the modules' folder */	
+@import "modules/_testimonial";					/* importing the _testimonial that we placed in the modules' folder */
 

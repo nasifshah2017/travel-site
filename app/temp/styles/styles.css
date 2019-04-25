@@ -499,11 +499,9 @@ a {
 		color: #2f5572;
 		margin: 0;
 		font-size: 2.4rem; /* Setting the smallest view font as our base font: For all screens */
-
-		/* Setting up responsive font according to the screen size that the user is viewing */
 	}
 
-/* Mobiles */
+/* Setting up responsive font according to the screen size that the user is viewing */
 
 @media (min-width: 530px) {
 
@@ -517,11 +515,9 @@ a {
 	color: #2f5572;
 	font-size: 1.5rem;	/* Setting the smallest view font as our base font */
 	margin: 0;
-
-	/* Setting up responsive font according to the screen size that the user is viewing */
 }
 
-/* Mobiles */
+/* Setting up responsive font according to the screen size that the user is viewing */
 
 @media (min-width: 530px) {
 
@@ -539,8 +535,6 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 }
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -568,8 +562,6 @@ a {
 		padding: 1.1rem 1.9rem;
 	}
 
-/* Mobiles */
-
 @media (min-width: 530px) {
 
 .btn--large {
@@ -591,6 +583,26 @@ a {
 		max-width: 976px;
 	}
 
+.wrapper--no-padding-until-medium {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.wrapper--no-padding-until-medium mixin atMedium {
+		padding-left: 18px;
+		padding-right: 18px;	
+		}
+
+.wrapper--no-padding-until-large {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+.wrapper--no-padding-until-large mixin atLarge {
+		padding-left: 18px;
+		padding-right: 18px;	
+		}
+
 .wrapper .wrapper {
 		padding-left: 0;
 		padding-right: 0;
@@ -600,8 +612,6 @@ a {
 		margin-bottom: 1rem;
 		
 	}
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -618,7 +628,7 @@ a {
 	padding: 1.2rem 0;
 }
 
-/* Tablets */
+/* Mobile */
 
 @media (min-width: 800px) {
 
@@ -627,9 +637,47 @@ a {
 }
 	}
 
+.page-section--no-b-padding-until-medium {
+		padding-bottom: 0;
+	}
+
+/* Mobile */
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+			padding-bottom: 4.5rem
+	}
+	}
+
+.page-section--no-b-padding-until-large {
+		padding-bottom: 0;
+	}
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-padding-until-large {
+			padding-bottom: 4.5rem
+	}
+	}
+
 .page-section--blue {
 		background-color: #2f5572;
 		color: #FFF;
+	}
+
+.page-section--testimonials {
+		background-color: #E0E6EF;
+		
+	}
+
+@media (min-width: 1010px) {
+
+.page-section--testimonials {
+			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+			background-size: cover
+		
+	}
 	}
 
 /* importing the _page-section.css that we placed in the modules' folder */
@@ -639,8 +687,6 @@ a {
 	font-weight: 300;
 	color: #2f5572;
 }
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -660,8 +706,6 @@ a {
 .headline--small {
 		font-size: 1.2rem;
 	}
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -700,12 +744,20 @@ a {
 		display: table;
 	}
 
+.row--t-padding {
+		padding-top: 80px;
+	}
+
 .row--gutters {
 		margin-right: -65px;
 	}
 
 .row--gutters-large {
 		margin-right: -100px;
+	}
+
+.row--gutters-small {
+		margin-right: -45px;
 	}
 
 .row--gutters > div {
@@ -716,11 +768,15 @@ a {
 		padding-right: 100px;
 	}
 
+.row--gutters-small > div {
+		padding-right: 45px;
+	}
+
 .row__b-margin-until-medium {
 		margin-bottom: 1rem;
 	}
 
-/* Tablets */
+/* Mobile */
 
 @media (min-width: 800px) {
 
@@ -752,6 +808,72 @@ a {
 		}
 	}
 
+@media (min-width: 1010px) {
+
+		.row__b-margin-until-large {
+			margin-bottom: 0;
+		}
+
+		.row__large-4 {
+		float: left;
+		width: 33.33%;
+	}
+
+		.row__large-4--larger {
+			width: 37%;
+		}
+
+		.row__large-6 {
+			float: left;
+			width: 50%;
+		}
+
+		.row__large-8 {
+			float: left;
+			width: 66.66%;
+		}
+
+		.row__large-8--smaller {
+			width: 63%;
+		}
+	}
+
+/* Begin Equal Height Rules */
+
+/* Mobile */
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex
+	}
+	}
+
+.row--equal-height-at-medium > div {
+			float: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+@media (min-width: 1010px) {
+
+.row--equal-height-at-large {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex
+	}
+	}
+
+.row--equal-height-at-large > div {
+			float: none;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
 /* importing the _row.css that we placed in the modules' folder */
 
 .generic-content-container p {
@@ -759,8 +881,6 @@ a {
 		line-height: 1.65;
 		margin: 0 0 1.8rem 0;
 	}
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -781,8 +901,6 @@ a {
 	text-align: center;
 }
 
-/* Mobiles */
-
 @media (min-width: 530px) {
 
 .section-title {
@@ -794,6 +912,10 @@ a {
 		font-weight: 500;
 	}
 
+.section-title--blue {
+		color: #2f5572;
+	}
+
 .section-title__icon {
 		display: block;
 		margin-left: auto;
@@ -801,11 +923,11 @@ a {
 		margin-bottom: .6rem;
 	}
 
-/* Mobiles */
-
 @media (min-width: 530px) {
 
 .section-title__icon {
+			position: relative;
+			top: 8px;
 			margin-right: .5rem;
 			margin-left: 0;
 			margin-bottom: 0;
@@ -820,8 +942,6 @@ a {
 	padding-bottom: 2.5rem;
 }
 
-/* Mobiles */
-
 @media (min-width: 530px) {
 
 .feature-item {
@@ -833,8 +953,6 @@ a {
 		display: block;
 		margin: 0 auto;
 	}
-
-/* Mobiles */
 
 @media (min-width: 530px) {
 
@@ -852,8 +970,6 @@ a {
 		text-align: center;
 	}
 
-/* Mobiles */
-
 @media (min-width: 530px) {
 
 .feature-item__title {
@@ -863,5 +979,52 @@ a {
 	}
 	}
 
-/* importing the _feature-item that we placed in the modules' folder */		
+/* importing the _feature-item that we placed in the modules' folder */
+
+.testimonial {
+	background-color: rgba(255, 255, 255, .8);
+	padding: 0 18px 1px 18px;
+	margin-bottom: 98px;
+}
+
+@media (min-width: 1010px) {
+
+.testimonial {
+		margin-bottom: 0;
+		padding: 0 1.8125rem 1px 1.8125rem
+}
+	}
+
+.testimonial--last {
+		margin-bottom: 0;
+	}
+
+.testimonial__photo {
+		border-radius: 80px;
+		overflow: hidden;
+		width: 160px;
+		height: 160px;
+		margin: 0 auto -80px auto;
+		position: relative;
+		top: -80px;
+		border: 6px solid rgba(255, 255, 255, .8);
+	}
+
+.testimonial__title {
+		color: #2f5572;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+.testimonial__subtitle {
+		color: #d59541;
+		text-align: center;
+		font-weight: 400;
+		font-size: 0.9375rem;
+		margin: .25rem 0 1rem 0;
+	}
+
+/* importing the _testimonial that we placed in the modules' folder */
 
