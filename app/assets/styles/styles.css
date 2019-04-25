@@ -8,5 +8,7 @@
 @import "modules/_page-section";				/* importing the _page-section.css that we placed in the modules' folder */
 @import "modules/_headline";					/* importing the _headline.css that we placed in the modules' folder */
 @import "modules/_row";							/* importing the _row.css that we placed in the modules' folder */	
-@import "modules/_generic-content-container";	/* importing the _generic-content-container that we placed in the modules' folder */			
+@import "modules/_generic-content-container";	/* importing the _generic-content-container that we placed in the modules' folder */
+@import "modules/_section-title";				/* importing the _section-title that we placed in the modules' folder */	
+@import "modules/_feature-item";				/* importing the _feature-item that we placed in the modules' folder */		
 
