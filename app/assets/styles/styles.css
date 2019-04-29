@@ -12,4 +12,6 @@
 @import "modules/_section-title";				/* importing the _section-title that we placed in the modules' folder */	
 @import "modules/_feature-item";				/* importing the _feature-item that we placed in the modules' folder */	
 @import "modules/_testimonial";					/* importing the _testimonial that we placed in the modules' folder */
+@import "modules/_sprite";						/* importing the _sprite file that we placed in the modules' folder */
+
 
