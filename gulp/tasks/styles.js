@@ -4,12 +4,13 @@ var gulp 			= require ('gulp'),
  	cssvars 		= require ('postcss-simple-vars'),
  	nested 			= require ('postcss-nested'),
  	cssImport 		= require ('postcss-import'),
- 	mixins			= require('postcss-mixins');
+ 	mixins			= require('postcss-mixins'),
+ 	hexrgba			= require ('postcss-hexrgba');
 
 
 gulp.task('styles', function(){
 	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssImport, mixins, cssvars, nested, autoprefixer])) 	// Connecting a new pipe on the pipe below which will add Post CSS filters to our CSS file
+		.pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer])) 	// Connecting a new pipe on the pipe below which will add Post CSS filters to our CSS file
 		.on('error', function(errorInfo) {
 		console.log(errorInfo.toString());									// To make the gulp watch function keep on running even after an error occured
 			this.emit('end');												// When an error occurs this function will tell Gulp that the styles.js file
