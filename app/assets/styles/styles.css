@@ -15,5 +15,6 @@
 @import "modules/_sprite";						/* importing the _sprite file that we placed in the modules' folder */
 @import "modules/_site-footer";					/* importing the _sites-footer file that we placed in the modules' folder */
 @import "modules/_site-header";					/* importing the _sites-header file that we placed in the modules' folder */
-@import "modules/_primary-nav";					/* importing the _primary-nav file that we placed in the modules' folder */ 
+@import "modules/_primary-nav";					/* importing the _primary-nav file that we placed in the modules' folder */
+@import "modules/_reveal-item"; 				/* importing the _reveal-item file that we placed in the modules' folder */
 
