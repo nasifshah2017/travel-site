@@ -17,4 +17,6 @@
 @import "modules/_site-header";					/* importing the _sites-header file that we placed in the modules' folder */
 @import "modules/_primary-nav";					/* importing the _primary-nav file that we placed in the modules' folder */
 @import "modules/_reveal-item"; 				/* importing the _reveal-item file that we placed in the modules' folder */
+@import "modules/_modal";						/* importing the _modal file that we placed in the modules' folder */
+@import "modules/_social-icons";				/* importing the _social-icons file that we placed in the modules' folder */
 
